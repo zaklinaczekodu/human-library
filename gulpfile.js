@@ -5,11 +5,11 @@ gulp.task('default', ['build']);
 
 gulp.task('build', ['clean'], function () {
     return gulp.src('./node_modules/human-library/dist/**/*')
-            .pipe(gulp.dest('./'));
+            .pipe(gulp.dest('./new/'));
 });
 
 gulp.task('clean', function () {
-    gulp.src(['./assets/', './index.html'], {
+    return gulp.src('./new/', {
         read: false
     }).pipe(clean());
 });

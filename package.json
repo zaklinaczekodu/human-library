@@ -1,9 +1,6 @@
 {
   "name": "human-library-page",
   "author": "Piotr Baranowski",
-  "scripts": {
-    "prepublish": "gulp"
-  },
   "devDependencies": {
     "human-library": "git+https://github.com/bolczyslaw/human-library.git",
     "gulp": "^3.6.0",
