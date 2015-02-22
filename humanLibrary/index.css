@@ -6559,10 +6559,11 @@ button.close {
   font-style: italic;
 }
 .navbar--hl {
+  min-width: 768px;
   box-shadow: 0 0 20px 0 #701e56;
 }
 .hl-panel {
-  margin: 20px 0 0 0;
+  margin: 10px 0;
   background-color: #eeeeee;
   border: none;
   border-radius: 0;
@@ -6651,6 +6652,21 @@ button.close {
   font-weight: 300;
   width: 111px;
 }
+.books {
+  min-height: 100%;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.books__footer {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 30px;
+  font-size: 1rem;
+}
 .book__wrapper {
   position: fixed;
   top: 50px;
@@ -6673,10 +6689,12 @@ button.close {
   height: 100%;
   overflow: auto;
 }
+html {
+  min-width: 768px;
+}
 body {
   padding-top: 51px;
-  padding-bottom: 20px;
-  min-width: 1px;
+  min-width: 768px;
 }
 #hl-navbar .navbar-right .navbar-btn {
   margin-right: 8px;
@@ -6731,4 +6749,7 @@ fieldset[disabled] .navbar-nav > li > a.btn.active {
 .navbar-nav > li > a.btn .badge {
   color: #ffffff;
   background-color: #333333;
+}
+.full-height {
+  height: 100%;
 }
